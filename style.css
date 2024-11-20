@@ -1,0 +1,76 @@
+/*Selector universal*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Selector tipo etiqueta*/
+body{
+    background-color: azure;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1{
+    color:rgb(220, 51, 51);
+}
+
+/*Selector tipo clase*/
+.tarjeta{
+    width: 300px;
+    background-color: rgb(199, 232, 232);
+    border-radius: 3%;
+    text-align: center;
+    /*Centrando elementos*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    transition: all 0.4s ease-in-out; /*Suavizar efecto*/
+}
+/*Pseudoclase hover para crear animaciones*/
+.tarjeta:hover{
+    background-color:aquamarine;
+    transform: scale(1.05);
+    transform: rotate(3deg);
+
+}
+
+.tarjeta .imagen_contenedor{
+    width: 200px;
+    
+
+}
+
+.tarjeta img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.tarjeta p{
+    font-size: 15px;
+}
+
+/*Selector tipo ID*/
+#perro{
+    color: coral;
+}
+
+#gato{
+    color:cornflowerblue;
+}
+
+#nutria{
+    color:darkblue;
+}
+
+#aguila{
+    color:firebrick;
+}
