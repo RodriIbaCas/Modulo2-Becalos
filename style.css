@@ -2,13 +2,23 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
+/*Google Fonts
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*/
 
 /*Selector tipo etiqueta*/
 body{
     background-color: azure;
-    display: flex;
-    flex-wrap: wrap;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 main{
@@ -22,7 +32,8 @@ h1{
 
 /*Selector tipo clase*/
 .tarjeta{
-    width: 300px;
+    width: 320px;
+    height: 400px;
     background-color: rgb(199, 232, 232);
     border-radius: 3%;
     text-align: center;
@@ -31,8 +42,14 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 8px;
+    margin: 10px;
+    padding: 12px;
+    border: 2px solid black;
     transition: all 0.4s ease-in-out; /*Suavizar efecto*/
+}
+
+.titulo-tarjeta{
+    margin-bottom: 10px;
 }
 /*Pseudoclase hover para crear animaciones*/
 .tarjeta:hover{
@@ -44,12 +61,11 @@ h1{
 
 .tarjeta .imagen_contenedor{
     width: 200px;
-    
-
 }
 
 .tarjeta img{
-    width: 100%;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 5%;
 }
